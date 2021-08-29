@@ -1,8 +1,22 @@
-import './style.css'
-
-const app = document.querySelector<HTMLDivElement>('#app')!
-
-app.innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+import 'phaser';
+ 
+class Game extends Phaser.Scene {
+    constructor() {
+        super("Game");
+    }
+    preload() {
+    }
+    create() {
+    }
+    update() {
+    }
+}
+ 
+let config = {
+    width: 800,
+    height: 600,
+    parent: 'game',
+    scene: Game
+};
+ 
+new Phaser.Game(config);
