@@ -1,5 +1,3 @@
-import 'phaser';
- 
 class Game extends Phaser.Scene {
     constructor() {
         super("Game");
@@ -11,12 +9,5 @@ class Game extends Phaser.Scene {
     update() {
     }
 }
- 
-let config = {
-    width: 800,
-    height: 600,
-    parent: 'game',
-    scene: Game
-};
- 
-new Phaser.Game(config);
+
+export default Game;
